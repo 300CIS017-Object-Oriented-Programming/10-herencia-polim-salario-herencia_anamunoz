@@ -1,0 +1,3 @@
+C:/GIT/10-herencia-polim-salario-herencia_anamunoz/cmake-build-debug/CMakeFiles/10_herencia_polim_salario_herencia_anamunoz.dir
+C:/GIT/10-herencia-polim-salario-herencia_anamunoz/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/GIT/10-herencia-polim-salario-herencia_anamunoz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
