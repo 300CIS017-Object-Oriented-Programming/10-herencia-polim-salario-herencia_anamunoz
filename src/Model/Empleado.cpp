@@ -3,3 +3,8 @@
 //
 
 #include "Empleado.h"
+
+Empleado::Empleado() {
+    salarioBase = 0 ;
+
+}
