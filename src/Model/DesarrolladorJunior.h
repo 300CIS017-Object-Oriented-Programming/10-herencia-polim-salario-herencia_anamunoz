@@ -1,16 +1,13 @@
-//
-// Created by PC on 4/05/2025.
-//
+#ifndef DESARROLLADOR_JUNIOR_H
+#define DESARROLLADOR_JUNIOR_H
 
-#ifndef DESARROLLADORJUNIOR_H
-#define DESARROLLADORJUNIOR_H
+#include "Empleado.h"
 
-
-
-class DesarrolladorJunior {
-
+class DesarrolladorJunior : public Empleado {
+public:
+    DesarrolladorJunior(string nombre, float salarioBase);
+    float calcularSalario() override;
+    string getTipo() override;
 };
 
-
-
-#endif //DESARROLLADORJUNIOR_H
+#endif

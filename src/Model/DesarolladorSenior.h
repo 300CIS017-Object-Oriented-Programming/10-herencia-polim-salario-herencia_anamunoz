@@ -1,16 +1,17 @@
-//
-// Created by PC on 4/05/2025.
-//
+#ifndef DESARROLLADOR_SENIOR_H
+#define DESARROLLADOR_SENIOR_H
 
-#ifndef DESAROLLADORSENIOR_H
-#define DESAROLLADORSENIOR_H
+#include "Empleado.h"
+#include <string>
+using std::string;
 
-
-
-class DesarolladorSenior {
-
+class DesarrolladorSenior : public Empleado {
+public:
+    DesarrolladorSenior(string nombre, float salarioBase);
+    float calcularSalario() override;
+    string getTipo() override;
 };
 
+#endif
 
 
-#endif //DESAROLLADORSENIOR_H

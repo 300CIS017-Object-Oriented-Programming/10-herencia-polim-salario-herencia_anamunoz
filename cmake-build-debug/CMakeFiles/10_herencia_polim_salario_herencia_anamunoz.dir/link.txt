@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\10_herencia_polim_salario_herencia_anamunoz.dir/objects.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\ar.exe qc CMakeFiles\10_herencia_polim_salario_herencia_anamunoz.dir/objects.a @CMakeFiles\10_herencia_polim_salario_herencia_anamunoz.dir\objects1.rsp
+C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\10_herencia_polim_salario_herencia_anamunoz.dir/objects.a -Wl,--no-whole-archive -o 10_herencia_polim_salario_herencia_anamunoz.exe -Wl,--out-implib,lib10_herencia_polim_salario_herencia_anamunoz.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\10_herencia_polim_salario_herencia_anamunoz.dir\linkLibs.rsp

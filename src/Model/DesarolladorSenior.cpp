@@ -1,5 +1,14 @@
-//
-// Created by PC on 4/05/2025.
-//
-
 #include "DesarolladorSenior.h"
+
+#include "Empleado.h"
+
+DesarrolladorSenior::DesarrolladorSenior(string nombre, float salarioBase)
+    : Empleado(nombre, salarioBase) {}
+
+float DesarrolladorSenior::calcularSalario() {
+    return salarioBase * 1.20f;
+}
+
+string DesarrolladorSenior::getTipo() {
+    return "Desarrollador Senior";
+}

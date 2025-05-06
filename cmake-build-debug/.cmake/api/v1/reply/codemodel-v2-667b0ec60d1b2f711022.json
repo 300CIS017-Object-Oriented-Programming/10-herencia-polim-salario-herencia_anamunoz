@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/GIT/10-herencia-polim-salario-herencia_anamunoz/cmake-build-debug",
-		"source" : "C:/GIT/10-herencia-polim-salario-herencia_anamunoz"
+		"build" : "C:/git/10-herencia-polim-salario-herencia_anamunoz/cmake-build-debug",
+		"source" : "C:/git/10-herencia-polim-salario-herencia_anamunoz"
 	},
 	"version" : 
 	{

@@ -1,37 +1,32 @@
-//
-// Created by PC on 4/05/2025.
-//
-
 #include "View.h"
-
 #include "../Model/SistemaNomina.h"
+#include <iostream>
+using std::cin;
+using std::cout;
 
-int View::menu() {
-
+void View::menu() {
+    SistemaNomina sistema;
     int opcion;
-    cout << "1. Agregar Empleado\n";
-    cout << "2. Mostrar valor total a pagar a todos los empleados\n";
-    cout << "3. Salir\n\n";
-    cout << "Ingrese la opcion que desea realizar\n";
-    cin >> opcion;
-    return opcion;
-}
+    do {
+        cout << "\n MENU NOMINA \n";
+        cout << "1. Mostrar Salarios de Empleados\n";
+        cout << "2. Calcular Total de la Nomina\n";
+        cout << "3. Salir\n";
+        cout << "Opcion: ";
+        cin >> opcion;
 
-
-void View::principal() {
-    int opcion;
-    cout << "========== Bienvenido =========\n";
-    do{
-        opcion = menu();
         switch (opcion) {
             case 1:
-                agregarFigura();
+                sistema.mostrarSalarios();
             break;
             case 2:
-                cout << "La suma es: " << SistemaNominaObj->calcularSumaAreas() << "\n";
+                cout << "Total a pagar: " << sistema.calcularTotalNomina() << "\n";
+            break;
+            case 3:
+                cout << "Saliendo del sistema\n";
             break;
             default:
-                break;
+                cout << "Opcion invalida.\n";
         }
     } while (opcion != 3);
 }

@@ -1,16 +1,19 @@
-//
-// Created by PC on 4/05/2025.
-//
+#ifndef SISTEMA_NOMINA_H
+#define SISTEMA_NOMINA_H
 
-#ifndef SISTEMANOMINA_H
-#define SISTEMANOMINA_H
-
-
+#include <vector>
+#include "Empleado.h"
 
 class SistemaNomina {
+private:
+    std::vector<Empleado*> empleados;
+public:
+    SistemaNomina();
+    ~SistemaNomina();
 
+    void inicializarDatos();
+    void mostrarSalarios();
+    float calcularTotalNomina();
 };
 
-
-
-#endif //SISTEMANOMINA_H
+#endif

@@ -1,10 +1,14 @@
-//
-// Created by PC on 4/05/2025.
-//
-
 #include "Empleado.h"
 
-Empleado::Empleado() {
-    salarioBase = 0 ;
+Empleado::Empleado(string nombre, float salarioBase) {
+    this->nombre = nombre;
+    this->salarioBase = salarioBase;
+}
 
+string Empleado::getNombre() const {
+    return nombre;
+}
+
+float Empleado::getSalarioBase() const {
+    return salarioBase;
 }

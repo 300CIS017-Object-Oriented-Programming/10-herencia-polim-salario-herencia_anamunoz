@@ -1,16 +1,14 @@
-//
-// Created by PC on 4/05/2025.
-//
-
 #ifndef TESTER_H
 #define TESTER_H
 
+#include "Empleado.h"
 
-
-class Tester {
-
+class Tester : public Empleado {
+public:
+    Tester(string nombre, float salarioBase);
+    float calcularSalario() override;
+    string getTipo() override;
 };
 
+#endif
 
-
-#endif //TESTER_H

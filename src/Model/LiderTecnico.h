@@ -1,16 +1,13 @@
-//
-// Created by PC on 4/05/2025.
-//
+#ifndef LIDER_TECNICO_H
+#define LIDER_TECNICO_H
 
-#ifndef LIDERTECNICO_H
-#define LIDERTECNICO_H
+#include "Empleado.h"
 
-
-
-class LiderTecnico {
-
+class LiderTecnico : public Empleado {
+public:
+    LiderTecnico(string nombre, float salarioBase);
+    float calcularSalario() override;
+    string getTipo() override;
 };
 
-
-
-#endif //LIDERTECNICO_H
+#endif

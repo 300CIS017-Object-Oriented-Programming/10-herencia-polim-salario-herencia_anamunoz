@@ -1,39 +1,23 @@
-//
-// Created by PC on 4/05/2025.
-//
-
 #ifndef EMPLEADO_H
 #define EMPLEADO_H
 
-#include <iostream>
-#include <vector>
-#include <cstdlib>
-
-using std::cin;
-using std::cout;
-using std::vector;
+#include <string>
 using std::string;
-
 
 class Empleado {
 protected:
     string nombre;
     float salarioBase;
-    string t_Empleado;
-
 public:
-    Empleado();
+    Empleado(string nombre, float salarioBase);
     virtual ~Empleado() = default;
 
-    // Son metodos
     virtual float calcularSalario() = 0;
-    double getSalarioBase() const;
-    float getNombre();
+    virtual string getTipo() = 0;
 
-    string getT_Empleado();
-
+    string getNombre() const;
+    float getSalarioBase() const;
 };
 
+#endif
 
-
-#endif //EMPLEADO_H
